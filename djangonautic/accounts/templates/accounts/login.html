@@ -1,0 +1,12 @@
+{% extends 'base_layout.html' %}
+
+{% block body %}
+
+<h1>LOGIN HERE</h1>
+<form class="site-form" action="/accounts/login" method="POST">
+{% csrf_token %}
+    {{form}}
+    <input type="submit" value="login">
+</form>
+
+{% endblock %}
